@@ -12,101 +12,126 @@ margin:0;
 background:#fff5e6;
 }
 
+/* HEADER */
+
 header{
 background:#7a0000;
 color:white;
-padding:20px;
 text-align:center;
+padding:20px;
 }
 
 .logo{
-font-size:35px;
+font-size:36px;
 font-weight:bold;
 color:gold;
 }
 
+/* NAVIGATION */
+
 nav{
 background:#222;
-padding:12px;
 text-align:center;
+padding:12px;
 }
 
 nav a{
 color:white;
 margin:15px;
-text-decoration:none;
 font-size:18px;
+text-decoration:none;
 }
 
 nav a:hover{
 color:gold;
 }
 
+/* HERO */
+
 .hero{
 background:url("https://images.unsplash.com/photo-1600891964092-4316c288032e");
 background-size:cover;
-padding:120px;
 color:white;
+padding:120px;
 text-align:center;
 font-size:40px;
 }
+
+/* SECTIONS */
 
 .section{
 padding:40px;
 text-align:center;
 }
 
-.menu-container{
+/* FINE DINE */
+
+.dine-container{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
-gap:25px;
+gap:30px;
+flex-wrap:wrap;
 }
 
-.menu-item{
-background:white;
-width:260px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-padding:15px;
-}
-
-.menu-item img{
-width:100%;
-height:160px;
+.dine-container img{
+width:350px;
 border-radius:10px;
 }
 
-.menu-item h3{
-color:#8b0000;
-}
-
-.price{
-color:green;
-font-weight:bold;
-}
+/* BAR MENU */
 
 .bar-section{
+display:flex;
+flex-wrap:wrap;
 background:#111;
 color:white;
 padding:40px;
 }
 
-.bar-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:25px;
+.bar-left{
+flex:1;
+padding:20px;
 }
 
-.bar-item{
-width:260px;
+.bar-right{
+flex:1;
 }
 
-.bar-item img{
+.bar-right img{
 width:100%;
 border-radius:10px;
 }
+
+/* DRINK COLORS */
+
+.cocktails{
+background:#ff4d6d;
+padding:15px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.mocktails{
+background:#ffa600;
+padding:15px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.whiskey{
+background:#8d5524;
+padding:15px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.scotch{
+background:#5f9ea0;
+padding:15px;
+border-radius:10px;
+}
+
+/* FOOTER */
 
 footer{
 background:#222;
@@ -116,154 +141,106 @@ padding:20px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 <div class="logo">🔥 Royal Biryani BBQ Grill & Bar</div>
-<p>Authentic Biryani • BBQ • Drinks</p>
+<p>Fine Dining • BBQ • Bar</p>
 </header>
 
 <nav>
 <a href="#">Home</a>
-<a href="#menu">Menu</a>
-<a href="#bbq">BBQ</a>
-<a href="#bar">Bar</a>
+<a href="#dine">Fine Dining</a>
+<a href="#bar">Bar Menu</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
-Best Biryani & BBQ Restaurant
+Luxury Dining Experience
 </div>
 
-<!-- MENU SECTION -->
+<!-- FINE DINING -->
 
-<section class="section" id="menu">
+<section class="section" id="dine">
 
-<h2>🍽 Our Special Dishes</h2>
+<h2>🍽 Fine Dining Experience</h2>
 
-<div class="menu-container">
+<div class="dine-container">
 
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1633945274309-2c16d6c8b5c6">
-<h3>Chicken Biryani</h3>
-<p>Hyderabadi spicy dum biryani</p>
-<p class="price">$12</p>
-</div>
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0">
 
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1625944525903-bf9f1c2afe7f">
-<h3>Mutton Biryani</h3>
-<p>Traditional mutton dum biryani</p>
-<p class="price">$15</p>
-</div>
+<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
 
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143">
-<h3>Tandoori Chicken</h3>
-<p>Indian spicy tandoori chicken</p>
-<p class="price">$11</p>
-</div>
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91">
-<h3>Chicken Kebabs</h3>
-<p>Grilled juicy kebabs</p>
-<p class="price">$9</p>
-</div>
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
-<h3>Butter Chicken</h3>
-<p>Creamy Indian butter chicken</p>
-<p class="price">$13</p>
-</div>
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1546069901-eacef0df6022">
-<h3>Veg Biryani</h3>
-<p>Mixed vegetable dum biryani</p>
-<p class="price">$10</p>
-</div>
+<img src="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0">
 
 </div>
+
+<p>Enjoy premium dining with family and friends in our elegant restaurant.</p>
 
 </section>
 
-<!-- BBQ SECTION -->
-
-<section class="section" id="bbq">
-
-<h2>🔥 BBQ Specials</h2>
-
-<div class="menu-container">
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1558030006-450675393462">
-<h3>BBQ Chicken</h3>
-<p>Slow cooked BBQ chicken</p>
-<p class="price">$14</p>
-</div>
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1604908554007-45e3c6b38c6b">
-<h3>BBQ Wings</h3>
-<p>Spicy grilled wings</p>
-<p class="price">$10</p>
-</div>
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1608032077018-c9aad9565d29">
-<h3>Grilled Lamb Chops</h3>
-<p>Premium grilled lamb chops</p>
-<p class="price">$18</p>
-</div>
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
-<h3>BBQ Mixed Grill</h3>
-<p>Chicken, lamb & kebabs</p>
-<p class="price">$20</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- BAR SECTION -->
+<!-- BAR SETUP -->
 
 <section class="bar-section" id="bar">
 
-<h2 style="text-align:center">🍺 Bar & Drinks</h2>
+<div class="bar-left">
 
-<div class="bar-container">
+<h2>🍸 Bar Menu</h2>
 
-<div class="bar-item">
-<img src="https://images.unsplash.com/photo-1582450871972-ab5ca641643d">
-<h3>Craft Beer</h3>
-<p>$6</p>
-</div>
-
-<div class="bar-item">
-<img src="https://images.unsplash.com/photo-1514361892635-eae31a8f5a34">
+<div class="cocktails">
 <h3>Cocktails</h3>
-<p>$8</p>
+<ul>
+<li>Margarita</li>
+<li>Mojito</li>
+<li>Cosmopolitan</li>
+<li>Martini</li>
+<li>Pina Colada</li>
+<li>Bloody Mary</li>
+</ul>
 </div>
 
-<div class="bar-item">
-<img src="https://images.unsplash.com/photo-1510626176961-4b37d8e9b9b1">
-<h3>Whiskey</h3>
-<p>$9</p>
-</div>
-
-<div class="bar-item">
-<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<div class="mocktails">
 <h3>Mocktails</h3>
-<p>$5</p>
+<ul>
+<li>Virgin Mojito</li>
+<li>Sunrise Cooler</li>
+<li>Mango Delight</li>
+<li>Berry Splash</li>
+<li>Lime Mint Fizz</li>
+<li>Tropical Punch</li>
+</ul>
 </div>
 
+<div class="whiskey">
+<h3>Whiskeys</h3>
+<ul>
+<li>Jack Daniels</li>
+<li>Jameson</li>
+<li>Jim Beam</li>
+<li>Crown Royal</li>
+<li>Wild Turkey</li>
+<li>Maker's Mark</li>
+</ul>
+</div>
+
+<div class="scotch">
+<h3>Scotches</h3>
+<ul>
+<li>Johnnie Walker Black</li>
+<li>Chivas Regal</li>
+<li>Glenfiddich</li>
+<li>Macallan</li>
+<li>Ballantine's</li>
+<li>Dewar's</li>
+</ul>
+</div>
+
+</div>
+
+<div class="bar-right">
+<img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b">
 </div>
 
 </section>
@@ -274,16 +251,14 @@ Best Biryani & BBQ Restaurant
 
 <h2>📞 Contact Us</h2>
 
-<p>📍 Food Street, Downtown</p>
+<p>📍 Downtown Food Street</p>
 <p>📞 +1 555 123 4567</p>
 <p>📧 royalbiryani@email.com</p>
 
 </section>
 
 <footer>
-
 <p>© 2026 Royal Biryani BBQ Grill & Bar</p>
-
 </footer>
 
 </body>
